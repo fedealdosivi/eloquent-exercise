@@ -1,0 +1,42 @@
+<html>
+
+<head>
+	
+<script>
+	
+function getMin()
+{
+  alert(Math.min(document.getElementById("n1").value,document.getElementById("n2").value));
+}
+
+function isEven()
+{
+  console.log(document.getElementById("n1").value%2==0);
+}
+
+function isOdd()
+{
+  console.log(Math.abs(document.getElementById("n1").value % 2) == 1);
+}
+
+
+</script>
+
+</head>
+
+<body>
+	
+	<form>
+	Numero 1:<input type="text" name="n1" size=20><BR>
+	NUmero 2:<input type="text" name="n2" size=20><BR>
+<input type="button" value="get min" size=20 onClick=getMin()><BR>
+
+<input type="button" value="is Even N1" size=20 onClick=isEven()><BR>
+<input type="button" value="is Odd N1" size=20 onClick=isOdd()><BR>
+
+</form>
+
+</body>
+
+
+</html>
