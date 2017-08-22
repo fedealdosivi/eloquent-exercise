@@ -1,0 +1,59 @@
+<html>
+
+<head>
+	
+<script>
+	
+function getMin(n1,n2)
+{
+	alert(Math.min(n1.value,n2.value));
+  //alert(Math.min(document.getElementByName('n1').value,document.getElementByName('n2').value));
+}
+
+function isEven(n)
+{
+	alert(n.value%2==0);
+  //alert(document.getElementByName('n1').value%2==0);
+}
+
+function isOdd(n)
+{
+	alert(n.value%2==1);
+  //alert(Math.abs(document.getElementByName('n2').value % 2) == 1);
+}
+
+function countChar(strg,chara)
+{
+  str=strg.value;
+  chr=chara.value;
+  var counter = 0
+  for (var i = 0; i < str.length; i++) {
+    if (str.charAt(i) === chr) {counter++;}
+  }
+  alert(counter);
+}
+
+
+</script>
+
+</head>
+
+<body>
+	
+	<form>
+	Numero 1:<input type="text" name="n1" id="1" size=20><BR>
+	NUmero 2:<input type="text" name="n2" id="2" size=20><BR>
+<input type="button" value="get min" size=20 onClick=getMin(n1,n2)><BR>
+<input type="button" value="is Even N1" size=20 onClick=isEven(n1)><BR>
+<input type="button" value="is Odd N1" size=20 onClick=isOdd(n1)><BR>
+
+Ingrese una palabra:<input type="text" name="str" size=20><BR>
+Ingrese una letra:<input type="text" name="chr" size=20><BR>
+<input type="button" value="count" size=20 onClick=countChar(str,chr)><BR>
+
+</form>
+
+</body>
+
+
+</html>
